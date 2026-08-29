@@ -43,6 +43,10 @@ cp -R skills/sales-conversion-eight-segment ~/.codex/skills/
 使用 $sales-conversion-eight-segment，帮我把这段报价和优惠政策改得更清楚，注意不要用虚假稀缺和绝对承诺。
 ```
 
+```text
+使用 $sales-conversion-eight-segment，帮我检查这个 offer、赠品、案例和报名路径是否足够支撑 2999 元课程转化。
+```
+
 ## 最好提供的资料
 
 ```text
@@ -75,15 +79,28 @@ skills/sales-conversion-eight-segment/
 └── references/
     ├── framework.md
     ├── learner-conversion-analysis.md
+    ├── offer-and-proof.md
     ├── price-decision.md
     ├── diagnosis-rubric.md
     ├── scoring.md
     ├── output-templates.md
     ├── transcript-processing.md
     ├── rewrite-patterns.md
+    ├── audience-modes.md
     ├── course-bridge.md
     └── compliance.md
 ```
+
+## 迭代与评测
+
+这个仓库包含一套轻量评测材料，方便持续优化：
+
+- `evals/test-prompts.md`：基础测试提示。
+- `evals/golden-cases.md`：1/3/5/7 分、价格错配、合规风险等黄金样例。
+- `evals/regression-checklist.md`：每次更新后的回归检查清单。
+- `docs/iteration-playbook.md`：如何把真实使用反馈沉淀成下一轮规则。
+
+提交反馈时请先脱敏，不要上传真实姓名、电话、微信、订单、未授权学员案例或完整私密逐字稿。
 
 ## 许可与署名
 

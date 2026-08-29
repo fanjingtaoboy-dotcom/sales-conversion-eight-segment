@@ -1,0 +1,51 @@
+name: Skill feedback
+description: 提交销讲八段 skill 的使用反馈、误判样例或优化建议
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请先脱敏，不要提交真实姓名、电话、微信、订单、未授权学员案例或完整私密逐字稿。
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景
+      description: 例如诊断旧课、设计新课、改逐字稿、评分校准、合规检查。
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: 脱敏输入
+      description: 粘贴可公开的脱敏片段，或描述输入类型。
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Skill 输出
+      description: 粘贴关键输出或概括结果。
+    validations:
+      required: false
+  - type: dropdown
+    id: problem
+    attributes:
+      label: 主要问题
+      options:
+        - 触发不准
+        - 评分不准
+        - 结构识别不准
+        - 改稿不好用
+        - 太长或太短
+        - 合规判断不足
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你期望它怎么输出
+      description: 可以写人工评分、不能升档原因、希望保留或改写的点。
+    validations:
+      required: true

@@ -1,6 +1,6 @@
 ---
 name: sales-conversion-eight-segment
-description: 用于线上课程、训练营、交付课、公开课、直播课后的销讲转化结构设计、诊断、评分、改稿和话术重构。用户要求评估课程中的销售转化环节、诊断销讲话术、设计成交承接、按问题唤醒/方案承接/价值塑造/制造稀缺/报出价格/优惠政策/降低顾虑/案例佐证八段检查、给销讲打 1/3/5/7/9 分、判断为什么不能升档、优化价格锚定/赠品权益/顾虑处理/案例佐证、从教学内容自然过渡到报名转化、处理几十元/几百元/几千元/几万元课程销售决策难度时使用。
+description: 用于线上课程、训练营、交付课、公开课、直播课后的销讲转化结构设计、诊断、评分、改稿和话术重构。用户要求评估课程中的销售转化环节、诊断销讲话术、设计成交承接、按问题唤醒/方案承接/价值塑造/制造稀缺/报出价格/优惠政策/降低顾虑/案例佐证八段检查、给销讲打 1/3/5/7/9 分、判断为什么不能升档、优化价格锚定/赠品权益/顾虑处理/案例佐证、从教学内容自然过渡到报名转化、处理报名/续报/升单/成交/咨询承接/预约诊断、分析 offer/赠品/权益/证据链、适配课程顾问/教研/讲师反馈、处理几十元/几百元/几千元/几万元课程销售决策难度时使用。
 ---
 
 # Sales Conversion Eight Segment
@@ -26,11 +26,13 @@ Load only the references needed for the request:
 - Always read `references/framework.md` for the eight segments, psychology chain, persuasion variables, secondary tasks, boundaries, and non-main content rules.
 - Read `references/learner-conversion-analysis.md` when target learners, teaching context, product fit, current belief state, or missing learner inputs affect the answer. For most diagnosis, scoring, design, and rewrite tasks, read it.
 - Read `references/price-decision.md` when price, offer design, conversion target, decision difficulty, or sales objective affects weighting.
+- Read `references/offer-and-proof.md` when product value, offer packaging, bonuses, rights, proof materials, cases, evidence strength, or action path affect the diagnosis or rewrite.
 - Read `references/diagnosis-rubric.md` for formal diagnosis, transcript review, module-boundary disputes, tertiary checks, common misjudgments, and strict judgment language.
 - Read `references/scoring.md` when the user asks for a score, grade, calibration, "why not higher", or upgrade path.
 - Read `references/output-templates.md` when producing a full report, quick check, formal score, rewrite plan, new sales framework, or user-facing usage instructions.
 - Read `references/transcript-processing.md` when the user provides a long transcript, messy ASR, a full course manuscript, or mixed teaching/sales material.
 - Read `references/rewrite-patterns.md` when the user asks for optimized wording, a talk track, segment-level rewrite, or a before/after version.
+- Read `references/audience-modes.md` when the output is meant for a course consultant, teaching researcher, teacher, client, or self-review, or when the user asks for a more usable feedback format.
 - Read `references/course-bridge.md` when the sales section is embedded inside a teaching course, when the user asks whether to merge with a course structure, or when the handoff from course teaching to sales conversion matters.
 - Read `references/compliance.md` for health, education, finance, high-ticket consulting, outcome claims, scarcity claims, refund/guarantee language, or testimonial/case handling.
 
@@ -58,12 +60,14 @@ Classify the user request into one or more modes:
 | Mode | User intent | Required references |
 |---|---|---|
 | Quick check | Fast check of a sales outline, offer section, or transcript | `framework.md`, `learner-conversion-analysis.md`, usually `diagnosis-rubric.md` |
-| Standard diagnosis | Diagnose a course sales section or sales script | `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `diagnosis-rubric.md`, `output-templates.md` |
+| Standard diagnosis | Diagnose a course sales section or sales script | `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `diagnosis-rubric.md`, `output-templates.md` |
 | Formal scoring | Give 1/3/5/7/9 score, explain why not higher, or compare versions | `framework.md`, `diagnosis-rubric.md`, `price-decision.md`, `scoring.md` |
 | Transcript processing | Extract the sales-conversion section from a long transcript or mixed course script | `transcript-processing.md`, `course-bridge.md`, `framework.md`, usually `diagnosis-rubric.md` |
-| Rewrite/rebuild | Produce an upgraded structure, optimized wording, or full reconstruction | `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `diagnosis-rubric.md`, `output-templates.md`, `rewrite-patterns.md`, usually `compliance.md` |
-| New conversion design | Build a sales-conversion framework after a lesson | `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `output-templates.md`, `course-bridge.md` |
+| Offer/proof audit | Judge whether the product, bonuses, cases, and evidence can support conversion | `offer-and-proof.md`, `price-decision.md`, `learner-conversion-analysis.md`, usually `compliance.md` |
+| Rewrite/rebuild | Produce an upgraded structure, optimized wording, or full reconstruction | `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `diagnosis-rubric.md`, `output-templates.md`, `rewrite-patterns.md`, usually `compliance.md` |
+| New conversion design | Build a sales-conversion framework after a lesson | `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `output-templates.md`, `course-bridge.md` |
 | Embedded course-sales bridge | Judge or improve the transition from teaching to sales | `course-bridge.md`, `framework.md`, `learner-conversion-analysis.md` |
+| Audience-specific feedback | Convert a diagnosis into consultant/research/teacher-friendly advice | `audience-modes.md`, `output-templates.md`, usually `diagnosis-rubric.md` |
 | Compliance-sensitive review | Health, education, finance, certification, high-ticket, or guarantee-heavy sales | `compliance.md`, plus diagnosis/scoring refs as needed |
 
 ### 2. Build the Learner Conversion Card
@@ -79,6 +83,7 @@ Before firm judgment, identify:
 - deeper need behind that problem
 - correct solution or principle they can easily accept
 - how the product/course carries that solution
+- offer inventory: main course, service, bonuses, rights, proof, and action path
 - price tier: 几十元 / 几百元 / 几千元 / 几万元
 - conversion target: 全款购买 / 定金锁单 / 加微信咨询 / 预约诊断 / 进入社群
 - main resistance to action
@@ -154,7 +159,18 @@ Always output:
 
 Do not award a higher score because the script is intense, emotional, interactive, or long. Score conversion-chain quality, task completion, buyer confidence, proof, action clarity, and compliance boundaries.
 
-### 7. Rebuild as a Conversion Pyramid
+### 7. Match Output to the Reader
+
+Before finalizing, adapt the answer to the intended reader:
+
+- Course consultant: emphasize score, bottleneck, deal objective, missing info, and next action.
+- Teaching researcher: emphasize structure mapping, task-level evidence, tertiary gaps, and rewrite logic.
+- Teacher: emphasize what to keep, what to change, how to say it, and how to rehearse it.
+- Self-review: emphasize the shortest useful checklist and the first bottleneck.
+
+If the user does not specify the reader, default to course consultant + teaching researcher: decisive diagnosis, enough evidence, and actionable rewrite moves.
+
+### 8. Rebuild as a Conversion Pyramid
 
 When reconstructing a sales conversion section, do not stop at eight segment names. Output:
 
