@@ -10,6 +10,8 @@
 
 也支持训练营/福利课里的多波次销讲识别，例如：第一轮全款成交、第二轮定金锁价、插班名额、助教报名承接、报名播报、课后作业收束等。
 
+新版本额外强化了“0元表单/免费营/结缘营用户转近3000元或几千元系统班”的判断：会先检查用户热度、免费体验获得感、信任缺口、服务系统、风险逆转、证据矩阵和高客单行动路径，避免把高客单销讲误判成普通低价福利课。
+
 核心结构：
 
 ```text
@@ -53,6 +55,10 @@ cp -R skills/sales-conversion-eight-segment ~/.codex/skills/
 使用 $sales-conversion-eight-segment，这几份稿来自同一个训练营。请先识别每节课里的销讲波次，再提炼哪些模式值得沉淀成可复用规则。
 ```
 
+```text
+使用 $sales-conversion-eight-segment，这是一批0元表单用户听完免费营后转近3000元系统班的逐字稿。请先识别销讲部分，再判断免费体验、信任加热、offer服务系统、风险逆转和案例证据是否足够支撑高客单转化。
+```
+
 ## 最小前提
 
 如果想让诊断更准，建议先提供 5 个前提：
@@ -63,6 +69,17 @@ cp -R skills/sales-conversion-eight-segment ~/.codex/skills/
 3. 目标学员是谁，刚刚听完什么教学内容？
 4. 学员此刻已经相信什么、还没有相信什么？
 5. 学员不行动的最大阻力是什么？
+```
+
+如果是 0元表单/免费营/结缘营转高客单，建议额外补充：
+
+```text
+入口来源：
+免费体验深度：听课天数 / 作业 / 实操反馈 / 互动 / 是否加微信
+已建立信任：
+尚未建立信任：
+售后/退款/保障规则：
+可脱敏案例素材：
 ```
 
 如果只是快速诊断，不提供完整信息也可以；skill 会先给暂判，并标注哪些判断来自推断。
@@ -109,6 +126,7 @@ skills/sales-conversion-eight-segment/
     ├── output-templates.md
     ├── transcript-processing.md
     ├── training-camp-patterns.md
+    ├── lead-form-high-ticket.md
     ├── rewrite-patterns.md
     ├── audience-modes.md
     ├── course-bridge.md

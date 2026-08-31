@@ -14,6 +14,8 @@ For deciding whether to ask questions before diagnosing, use `intake-questioning
 
 ```text
 目标学员是谁：
+入口来源：0元表单 / 免费营 / 结缘营 / 福利课 / 低价体验 / 老学员 / 转介绍 / 其他
+免费体验深度：听课天数、作业、互动、实操反馈、是否加微信、是否领取资料
 学员刚刚听完什么教学内容：
 学员当前心理状态是获得感、观望、心动、犹豫还是抗拒：
 学员已经相信了什么：
@@ -28,6 +30,20 @@ For deciding whether to ask questions before diagnosing, use `intake-questioning
 可以用于案例佐证的成功案例有哪些：
 这些判断来自用户提供资料，还是从原稿推断：
 ```
+
+## Lead Source and Warmth
+
+When learners come from 0元表单、免费营、结缘营、福利课 or other low-commitment entry points, do not assume strong purchase trust. First separate:
+
+| 信号 | 说明 | 影响 |
+|---|---|---|
+| 入口来源 | 0元表单、免费营、低价体验、老学员、转介绍 | 决定信任起点 |
+| 参与深度 | 听了几天、交没交作业、是否互动、是否被老师/助教反馈 | 决定能否引用免费体验获得感 |
+| 已有信任 | 相信老师、相信方法、相信团队服务、相信自己有问题 | 决定能否直接进入系统方案 |
+| 信任缺口 | 不确定值不值、自己能不能、售后是否真、是不是被销售 | 决定降低顾虑和案例佐证权重 |
+| 行动阻力 | 价格、时间、家人意见、年龄/基础、手机操作 | 决定全款、定金、咨询或预约目标 |
+
+For near-3000-yuan and few-thousand-yuan offers, this section is mandatory before firm scoring.
 
 ## 资料与八段对应关系
 
@@ -70,6 +86,8 @@ Use one of these evidence labels in formal outputs:
 
 ```text
 课程主题：
+入口来源：
+免费体验深度：
 目标学员：
 刚刚交付的教学内容：
 销售产品/课程：
@@ -97,6 +115,7 @@ Use one of these evidence labels in formal outputs:
 价格：原价 / 优惠价 / 定金 / 尾款 / 分期：
 转化目标：全款 / 定金 / 加微信 / 预约诊断 / 进群 / 续报 / 升单：
 目标学员：
+入口来源与免费体验深度：
 刚刚交付的教学内容：
 学员当前心理状态：获得感 / 观望 / 心动 / 犹豫 / 抗拒：
 学员已经相信什么：

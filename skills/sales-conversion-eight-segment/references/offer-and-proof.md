@@ -25,6 +25,22 @@ Use this card when the user provides product, price, bonus, case, or action-path
 证据来源：截图 / 学员反馈 / 数据 / 老师观察 / 用户口述 / 暂缺
 ```
 
+## High-Ticket Service Stack
+
+For near-3000-yuan and few-thousand-yuan offers, especially from 0元表单、免费营、结缘营 or 福利课 leads, judge whether the offer is presented as a service system.
+
+```text
+内容系统：模块、顺序、能力结果
+陪伴系统：老师、助教、班主任、答疑、作业反馈
+练习系统：实操、打卡、纠偏、复盘
+资料工具：讲义、图谱、工具、回放、复训
+交付组合：线上、线下、社群、私域、长期服务
+售后保障：退款、协议、保价、服务期、适配边界
+行动承接：全款、定金、咨询、预约、助教跟进
+```
+
+If the service stack is vague, do not treat a high-ticket offer as fully supported even when many bonuses are listed.
+
 ## Evidence Stack
 
 Strong conversion normally needs a four-layer evidence stack:
@@ -85,6 +101,21 @@ Use proof strength to decide how firm the diagnosis or rewrite can be:
 | 中 | 评论区反馈、作业截图、社群互动、老师观察 | 可作为辅助信任材料，需要边界表达 |
 | 弱 | 泛泛好评、无法核验截图、极端个案、内部口述 | 只能谨慎使用，不能支撑强承诺 |
 | 缺失 | 没有案例或数据 | 诊断为案例证据不足，建议补素材 |
+
+## Proof Matrix for Free-Entry High-Ticket
+
+When a free-entry learner is asked to buy a high-ticket course, require more than one proof type:
+
+| 证据类型 | 证明作用 | 检查点 |
+|---|---|---|
+| 免费体验反馈 | 证明前置体验真实有效 | 是否来自听课、作业、实操、互动 |
+| 相似学员案例 | 证明目标学员能代入 | 年龄、基础、问题、顾虑是否相似 |
+| 学习过程证据 | 证明结果来自课程机制 | 是否展示练习、反馈、陪伴、复盘 |
+| 服务承接证据 | 证明报名后有人管 | 助教/老师/班主任如何响应 |
+| 多场景案例 | 证明课程不是只解决单点问题 | 不夸大、不泛化到所有问题 |
+| 现场行动信号 | 证明有人正在咨询或报名 | 只能辅助，不能替代真实案例 |
+
+The report should state which proof types are present, missing, or too risky to use.
 
 ## Offer-Structure Fit
 

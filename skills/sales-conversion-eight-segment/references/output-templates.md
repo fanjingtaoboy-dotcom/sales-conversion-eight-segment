@@ -173,6 +173,38 @@ Use when the user provides one or more training camp, welfare lesson, or multi-d
 六、还需要补充的样本或资料
 ```
 
+## Free-Lead High-Ticket Diagnosis
+
+Use when 0元表单、免费营、结缘营、福利课 or other low-commitment users are converted to near-3000-yuan or few-thousand-yuan offers.
+
+```text
+一、样本边界
+- 入口来源：
+- 免费体验深度：
+- 销售产品与价格：
+- 本场转化目标：
+- 暂缺信息：
+
+二、高客单免费入口判断
+| 判断项 | 当前证据 | 判定 | 改进动作 |
+|---|---|---|---|
+| 免费体验获得感 |  | 足/弱/缺 |  |
+| 信任已经建立 |  | 足/弱/缺 |  |
+| 信任缺口 |  | 清楚/模糊/缺 |  |
+| 系统方案承接 |  | 足/弱/缺 |  |
+| offer 服务系统 |  | 足/弱/缺 |  |
+| 价格锚定 |  | 足/弱/缺/有风险 |  |
+| 风险逆转 |  | 足/弱/缺/有风险 |  |
+| 证据矩阵 |  | 足/弱/缺/有风险 |  |
+| 行动路径 |  | 足/弱/缺 |  |
+
+三、八段结构识别
+四、最影响近3000元/几千元购买的 3 个断点
+五、优先改稿动作
+六、需要补充的 offer/案例/售后资料
+七、合规与信任边界提醒
+```
+
 ## New Conversion Framework
 
 Use when the user asks to design a sales section from scratch.
