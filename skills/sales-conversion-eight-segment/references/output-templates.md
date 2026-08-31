@@ -140,6 +140,39 @@ Use when the user asks to improve, restructure, or rewrite.
 |---|---|---|---|
 ```
 
+## Training Camp Multi-Wave Diagnosis
+
+Use when the user provides one or more training camp, welfare lesson, or multi-day live transcripts.
+
+```text
+一、样本边界
+- 素材数量：
+- 共同销售产品：
+- 价格/优惠/定金：
+- 转化目标：
+- 暂缺信息：
+
+二、销讲波次图
+| 样本 | 波次 | 原稿位置 | 触发点 | 主讲/助教分工 | 目标动作 | 八段归属 | 主要风险 |
+|---|---|---|---|---|---|---|---|
+
+三、跨样本共性模式
+1.
+2.
+3.
+
+四、对八段结构的改进启发
+| 八段 | 从样本提炼出的有效做法 | 需要加入的判断规则 | 风险边界 |
+|---|---|---|---|
+
+五、建议沉淀到 skill 的更新
+1.
+2.
+3.
+
+六、还需要补充的样本或资料
+```
+
 ## New Conversion Framework
 
 Use when the user asks to design a sales section from scratch.

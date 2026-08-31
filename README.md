@@ -8,6 +8,8 @@
 2. 设计新课后的成交承接框架。
 3. 改造逐字稿、报价话术、优惠政策、顾虑处理和案例佐证。
 
+也支持训练营/福利课里的多波次销讲识别，例如：第一轮全款成交、第二轮定金锁价、插班名额、助教报名承接、报名播报、课后作业收束等。
+
 核心结构：
 
 ```text
@@ -45,6 +47,10 @@ cp -R skills/sales-conversion-eight-segment ~/.codex/skills/
 
 ```text
 使用 $sales-conversion-eight-segment，帮我检查这个 offer、赠品、案例和报名路径是否足够支撑 2999 元课程转化。
+```
+
+```text
+使用 $sales-conversion-eight-segment，这几份稿来自同一个训练营。请先识别每节课里的销讲波次，再提炼哪些模式值得沉淀成可复用规则。
 ```
 
 ## 最小前提
@@ -102,6 +108,7 @@ skills/sales-conversion-eight-segment/
     ├── scoring.md
     ├── output-templates.md
     ├── transcript-processing.md
+    ├── training-camp-patterns.md
     ├── rewrite-patterns.md
     ├── audience-modes.md
     ├── course-bridge.md

@@ -1,6 +1,6 @@
 ---
 name: sales-conversion-eight-segment
-description: 用于线上课程、训练营、交付课、公开课、直播课后的销讲转化结构设计、诊断、评分、改稿和话术重构。用户要求评估课程中的销售转化环节、诊断销讲话术、设计成交承接、按问题唤醒/方案承接/价值塑造/制造稀缺/报出价格/优惠政策/降低顾虑/案例佐证八段检查、给销讲打 1/3/5/7/9 分、判断为什么不能升档、优化价格锚定/赠品权益/顾虑处理/案例佐证、从教学内容自然过渡到报名转化、处理报名/续报/升单/成交/咨询承接/预约诊断、分析 offer/赠品/权益/证据链、适配课程顾问/教研/讲师反馈、处理几十元/几百元/几千元/几万元课程销售决策难度时使用。
+description: 用于线上课程、训练营、福利课、交付课、公开课、直播课后的销讲转化结构设计、诊断、评分、改稿和话术重构。用户要求评估课程中的销售转化环节、诊断销讲话术、识别训练营多波次销讲、设计成交承接、按问题唤醒/方案承接/价值塑造/制造稀缺/报出价格/优惠政策/降低顾虑/案例佐证八段检查、给销讲打 1/3/5/7/9 分、判断为什么不能升档、优化价格锚定/赠品权益/顾虑处理/案例佐证、从教学内容自然过渡到报名转化、处理报名/续报/升单/成交/咨询承接/预约诊断/定金锁价/插班名额/助教报名承接、分析 offer/赠品/权益/证据链、适配课程顾问/教研/讲师反馈、处理几十元/几百元/几千元/几万元课程销售决策难度时使用。
 ---
 
 # Sales Conversion Eight Segment
@@ -32,6 +32,7 @@ Load only the references needed for the request:
 - Read `references/scoring.md` when the user asks for a score, grade, calibration, "why not higher", or upgrade path.
 - Read `references/output-templates.md` when producing a full report, quick check, formal score, rewrite plan, new sales framework, or user-facing usage instructions.
 - Read `references/transcript-processing.md` when the user provides a long transcript, messy ASR, a full course manuscript, or mixed teaching/sales material.
+- Read `references/training-camp-patterns.md` when the material comes from a training camp, welfare/free bonus lesson, multi-day sales arc, multiple transcripts from one camp, or contains multiple sales waves such as 第一轮营销/第二轮营销, 插班名额, 定金锁价, 助教/场控报名承接, repeated quota reminders, or full-payment-to-deposit switching.
 - Read `references/rewrite-patterns.md` when the user asks for optimized wording, a talk track, segment-level rewrite, or a before/after version.
 - Read `references/audience-modes.md` when the output is meant for a course consultant, teaching researcher, teacher, client, or self-review, or when the user asks for a more usable feedback format.
 - Read `references/course-bridge.md` when the sales section is embedded inside a teaching course, when the user asks whether to merge with a course structure, or when the handoff from course teaching to sales conversion matters.
@@ -48,6 +49,7 @@ Choose the smallest useful response that still completes the user's request:
 - If the user provides only a vague product or course idea, return a starter eight-segment conversion framework plus 3-5 high-impact questions for the next iteration.
 - If the source material is long and the user did not ask for a full report, default to a compact diagnosis with the biggest conversion-chain breaks and upgrade path.
 - If the source material is a long transcript, first create a cleaned sales-structure map: teaching-to-sales boundary, eight-segment locations, offer elements, interaction loops, objection handling, case evidence, and non-main-thread content.
+- If the user provides several transcripts from the same training camp, first build a cross-sample wave map. Distinguish teaching content, sales bridges, explicit sales waves, assistant operation handoffs, and closing/relationship maintenance before deriving reusable conclusions.
 - If the sales copy feels mature, do not assume a 9-point result. Separate sales energy from structural quality, then identify residual upgrade points.
 - If the user asks for "完整诊断/正式评分/逐字稿深度诊断/整体重构", use the complete output structure and do not omit module-misjudgment, price-difficulty weighting, or why-not-higher reasoning.
 
@@ -65,6 +67,7 @@ Classify the user request into one or more modes:
 | Standard diagnosis | Diagnose a course sales section or sales script | `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `diagnosis-rubric.md`, `output-templates.md` |
 | Formal scoring | Give 1/3/5/7/9 score, explain why not higher, or compare versions | `intake-questioning.md`, `framework.md`, `diagnosis-rubric.md`, `price-decision.md`, `scoring.md` |
 | Transcript processing | Extract the sales-conversion section from a long transcript or mixed course script | `transcript-processing.md`, `course-bridge.md`, `framework.md`, usually `diagnosis-rubric.md` |
+| Training camp wave analysis | Identify and evaluate repeated sales waves across a training camp, welfare lesson, or multi-day live sequence | `training-camp-patterns.md`, `transcript-processing.md`, `course-bridge.md`, `price-decision.md`, `offer-and-proof.md`, `compliance.md` |
 | Offer/proof audit | Judge whether the product, bonuses, cases, and evidence can support conversion | `offer-and-proof.md`, `price-decision.md`, `learner-conversion-analysis.md`, usually `compliance.md` |
 | Rewrite/rebuild | Produce an upgraded structure, optimized wording, or full reconstruction | `intake-questioning.md`, `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `diagnosis-rubric.md`, `output-templates.md`, `rewrite-patterns.md`, usually `compliance.md` |
 | New conversion design | Build a sales-conversion framework after a lesson | `intake-questioning.md`, `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `output-templates.md`, `course-bridge.md` |
@@ -137,6 +140,11 @@ Use only these top-level modules:
 6. 优惠政策
 7. 降低顾虑
 8. 案例佐证
+
+For training camp or welfare-lesson transcripts, diagnose at two levels:
+
+1. Whole sales arc: whether repeated waves collectively complete the eight-segment chain without contradictions or trust loss.
+2. Single wave: whether each explicit sales wave has a clear function, target action, speaker role, and handoff path.
 
 ### 5. Diagnose at the Right Depth
 

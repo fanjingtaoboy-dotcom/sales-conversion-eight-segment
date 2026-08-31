@@ -1,4 +1,4 @@
 interface:
   display_name: "销讲转化八段诊断"
-  short_description: "诊断、评分、改造课程销讲话术结构"
-  default_prompt: "Use $sales-conversion-eight-segment to diagnose and improve this course sales-conversion script."
+  short_description: "诊断、评分、改造课程销讲话术与训练营多波次转化"
+  default_prompt: "Use $sales-conversion-eight-segment to identify sales waves, diagnose the eight-segment conversion chain, and improve this course sales script."
