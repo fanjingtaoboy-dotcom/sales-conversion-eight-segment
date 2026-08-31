@@ -6,6 +6,8 @@
 
 资料不足时，可以从原稿推断，但必须标注“推断”。不要把推断当事实，也不要在学员画像模糊时做强判断。
 
+For deciding whether to ask questions before diagnosing, use `intake-questioning.md`. This file defines the learner card; the intake file defines when the card is mandatory, inferable, or optional.
+
 ## 学员转化分析卡
 
 正式诊断、评分、改稿前，先建立这张卡：
@@ -83,6 +85,35 @@ Use one of these evidence labels in formal outputs:
 合规限制：
 已有材料：大纲 / PPT / 逐字稿 / 录音转写 / 其他
 希望输出：快速诊断 / 完整诊断 / 评分 / 重构方案 / 优化话术 / 新销讲框架
+```
+
+## 完整版输入模板
+
+当用户要正式评分、完整逐字稿改造或给讲师使用的成稿，给这个完整版：
+
+```text
+课程主题：
+销售产品/课程：
+价格：原价 / 优惠价 / 定金 / 尾款 / 分期：
+转化目标：全款 / 定金 / 加微信 / 预约诊断 / 进群 / 续报 / 升单：
+目标学员：
+刚刚交付的教学内容：
+学员当前心理状态：获得感 / 观望 / 心动 / 犹豫 / 抗拒：
+学员已经相信什么：
+学员还没有相信什么：
+大多数目标学员共同问题：
+深层需求：
+课程核心价值点：
+赠品/权益：
+学习服务机制：
+售后/退款/保障规则：
+真实案例素材：
+报名路径：
+合规限制：
+历史转化率/目标转化率：可选
+最终给谁看：自己 / 课程顾问 / 教研 / 讲师：
+已有材料：大纲 / PPT / 逐字稿 / 录音转写 / 其他：
+希望输出：
 ```
 
 ## Question Priority

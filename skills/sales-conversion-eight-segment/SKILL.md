@@ -25,6 +25,7 @@ Load only the references needed for the request:
 
 - Always read `references/framework.md` for the eight segments, psychology chain, persuasion variables, secondary tasks, boundaries, and non-main content rules.
 - Read `references/learner-conversion-analysis.md` when target learners, teaching context, product fit, current belief state, or missing learner inputs affect the answer. For most diagnosis, scoring, design, and rewrite tasks, read it.
+- Read `references/intake-questioning.md` when prerequisites are missing, when the user asks what information to provide, when doing formal scoring or full rewrite, or when conversion-rate targets, target learners, sales scene, and conversion objective need clarification.
 - Read `references/price-decision.md` when price, offer design, conversion target, decision difficulty, or sales objective affects weighting.
 - Read `references/offer-and-proof.md` when product value, offer packaging, bonuses, rights, proof materials, cases, evidence strength, or action path affect the diagnosis or rewrite.
 - Read `references/diagnosis-rubric.md` for formal diagnosis, transcript review, module-boundary disputes, tertiary checks, common misjudgments, and strict judgment language.
@@ -41,7 +42,8 @@ Load only the references needed for the request:
 Choose the smallest useful response that still completes the user's request:
 
 - If the user provides enough material, begin the work directly. Do not ask for perfect inputs before giving value.
-- If key conversion information is missing, build an inferred learner conversion card, label uncertainty, and list the missing inputs that would improve accuracy.
+- If key conversion information is missing but the user asks for quick diagnosis, build an inferred learner conversion card, label uncertainty, give a provisional judgment, and ask only the few questions that would most change the result.
+- If a formal score or full rewrite is requested but product, price, conversion target, target learner, or source material is missing, pause before firm scoring/rewrite and ask the smallest blocking question set, usually 3-5 questions.
 - If the user asks "怎么用/需要什么资料/给我模板", provide a user-facing input checklist and prompt examples instead of doing diagnosis.
 - If the user provides only a vague product or course idea, return a starter eight-segment conversion framework plus 3-5 high-impact questions for the next iteration.
 - If the source material is long and the user did not ask for a full report, default to a compact diagnosis with the biggest conversion-chain breaks and upgrade path.
@@ -61,16 +63,37 @@ Classify the user request into one or more modes:
 |---|---|---|
 | Quick check | Fast check of a sales outline, offer section, or transcript | `framework.md`, `learner-conversion-analysis.md`, usually `diagnosis-rubric.md` |
 | Standard diagnosis | Diagnose a course sales section or sales script | `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `diagnosis-rubric.md`, `output-templates.md` |
-| Formal scoring | Give 1/3/5/7/9 score, explain why not higher, or compare versions | `framework.md`, `diagnosis-rubric.md`, `price-decision.md`, `scoring.md` |
+| Formal scoring | Give 1/3/5/7/9 score, explain why not higher, or compare versions | `intake-questioning.md`, `framework.md`, `diagnosis-rubric.md`, `price-decision.md`, `scoring.md` |
 | Transcript processing | Extract the sales-conversion section from a long transcript or mixed course script | `transcript-processing.md`, `course-bridge.md`, `framework.md`, usually `diagnosis-rubric.md` |
 | Offer/proof audit | Judge whether the product, bonuses, cases, and evidence can support conversion | `offer-and-proof.md`, `price-decision.md`, `learner-conversion-analysis.md`, usually `compliance.md` |
-| Rewrite/rebuild | Produce an upgraded structure, optimized wording, or full reconstruction | `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `diagnosis-rubric.md`, `output-templates.md`, `rewrite-patterns.md`, usually `compliance.md` |
-| New conversion design | Build a sales-conversion framework after a lesson | `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `output-templates.md`, `course-bridge.md` |
+| Rewrite/rebuild | Produce an upgraded structure, optimized wording, or full reconstruction | `intake-questioning.md`, `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `diagnosis-rubric.md`, `output-templates.md`, `rewrite-patterns.md`, usually `compliance.md` |
+| New conversion design | Build a sales-conversion framework after a lesson | `intake-questioning.md`, `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `output-templates.md`, `course-bridge.md` |
 | Embedded course-sales bridge | Judge or improve the transition from teaching to sales | `course-bridge.md`, `framework.md`, `learner-conversion-analysis.md` |
 | Audience-specific feedback | Convert a diagnosis into consultant/research/teacher-friendly advice | `audience-modes.md`, `output-templates.md`, usually `diagnosis-rubric.md` |
 | Compliance-sensitive review | Health, education, finance, certification, high-ticket, or guarantee-heavy sales | `compliance.md`, plus diagnosis/scoring refs as needed |
 
-### 2. Build the Learner Conversion Card
+### 2. Run the Intake Gate
+
+Before analysis, decide whether to ask, infer, or proceed:
+
+```text
+Quick diagnosis: proceed with provisional judgment; ask follow-up questions after the useful answer.
+Standard diagnosis: proceed if product, rough price/offer, target learner, and source material are inferable; label missing fields.
+Formal scoring: require at least product, price tier, conversion target, target learner or learner context, and sales material.
+Full rewrite: require product/offer, target learner, conversion target, price, main resistance, and proof/service boundaries; otherwise provide a skeleton and ask blocking questions.
+```
+
+Ask no more than 5 questions at once. Prefer the minimum set that changes the diagnosis:
+
+1. 这场销讲要卖什么，价格是多少？
+2. 转化目标是什么：全款、定金、加微信、预约诊断、进群、续报还是升单？
+3. 目标学员是谁，刚刚听完什么教学内容？
+4. 学员此刻已经相信什么、还没有相信什么？
+5. 学员不行动的最大阻力是什么？
+
+Treat conversion-rate targets as useful context, not a structural scoring substitute. If the user gives or asks about conversion rate, ask for baseline, sample size, traffic source, and current suspected bottleneck before making performance claims.
+
+### 3. Build the Learner Conversion Card
 
 Before firm judgment, identify:
 
@@ -92,7 +115,7 @@ Before firm judgment, identify:
 
 If critical information is missing, continue with cautious inference and mark it.
 
-### 3. Diagnose the Eight-Segment Chain
+### 4. Diagnose the Eight-Segment Chain
 
 For every module, judge:
 
@@ -115,7 +138,7 @@ Use only these top-level modules:
 7. 降低顾虑
 8. 案例佐证
 
-### 4. Diagnose at the Right Depth
+### 5. Diagnose at the Right Depth
 
 For quick checks, use secondary tasks and concise evidence.
 
@@ -134,13 +157,13 @@ Expand tertiary checks especially when:
 - optimized wording or full reconstruction is required
 - compliance risk could affect the maximum score
 
-### 5. Weight by Price and Conversion Target
+### 6. Weight by Price and Conversion Target
 
 Before scoring or rewriting, check whether the conversion objective matches decision difficulty. For a few-dozen-yuan offer, action can be shorter and more impulse-driven. For a few-thousand-yuan or few-ten-thousand-yuan offer, value proof, price anchoring, objection handling, proof, and consultation/deposit handoff usually need more weight.
 
 Do not force full payment as the only valid outcome. For high-ticket offers, `预约诊断`, `资格评估`, `定金锁席`, or `顾问承接` may be the right conversion goal.
 
-### 6. Score Only After Diagnosis
+### 7. Score Only After Diagnosis
 
 When scoring, follow:
 
@@ -159,7 +182,7 @@ Always output:
 
 Do not award a higher score because the script is intense, emotional, interactive, or long. Score conversion-chain quality, task completion, buyer confidence, proof, action clarity, and compliance boundaries.
 
-### 7. Match Output to the Reader
+### 8. Match Output to the Reader
 
 Before finalizing, adapt the answer to the intended reader:
 
@@ -170,7 +193,7 @@ Before finalizing, adapt the answer to the intended reader:
 
 If the user does not specify the reader, default to course consultant + teaching researcher: decisive diagnosis, enough evidence, and actionable rewrite moves.
 
-### 8. Rebuild as a Conversion Pyramid
+### 9. Rebuild as a Conversion Pyramid
 
 When reconstructing a sales conversion section, do not stop at eight segment names. Output:
 

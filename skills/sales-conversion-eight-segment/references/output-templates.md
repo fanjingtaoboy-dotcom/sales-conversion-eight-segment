@@ -1,5 +1,37 @@
 # 输出模板
 
+## Intake Gate
+
+Use when key prerequisites are missing.
+
+```text
+我可以先基于现有材料做暂判；但如果要【正式评分/完整改稿/给讲师使用】，还差这几个关键前提：
+
+1. 这场销讲要卖什么，价格是多少？
+2. 转化目标是什么：全款、定金、加微信、预约诊断、进群、续报还是升单？
+3. 目标学员是谁，刚刚听完什么教学内容？
+4. 学员此刻已经相信什么、还没有相信什么？
+5. 学员不行动的最大阻力是什么？
+
+你先补这几项，我就能给更稳的判断。
+```
+
+## Provisional Diagnosis With Missing Inputs
+
+Use when the user wants a quick answer but information is incomplete.
+
+```text
+基于现有材料的暂判：
+不确定项：
+最可能的结构问题：
+现在可以先改：
+
+如果要做正式评分，还需要补：
+1.
+2.
+3.
+```
+
 ## Quick Diagnosis
 
 Use when the user asks for a quick check, early judgment, or high-level advice.

@@ -47,6 +47,22 @@ cp -R skills/sales-conversion-eight-segment ~/.codex/skills/
 使用 $sales-conversion-eight-segment，帮我检查这个 offer、赠品、案例和报名路径是否足够支撑 2999 元课程转化。
 ```
 
+## 最小前提
+
+如果想让诊断更准，建议先提供 5 个前提：
+
+```text
+1. 这场销讲要卖什么，价格是多少？
+2. 转化目标是什么：全款、定金、加微信、预约诊断、进群、续报还是升单？
+3. 目标学员是谁，刚刚听完什么教学内容？
+4. 学员此刻已经相信什么、还没有相信什么？
+5. 学员不行动的最大阻力是什么？
+```
+
+如果只是快速诊断，不提供完整信息也可以；skill 会先给暂判，并标注哪些判断来自推断。
+
+转化率目标可以补充，但不建议单独作为诊断依据。更好的写法是：历史转化率、目标转化率、样本量、流量来源，以及你怀疑卡在“听不下去、觉得不值、不敢买、不知道怎么行动”哪一步。
+
 ## 最好提供的资料
 
 ```text
@@ -79,6 +95,7 @@ skills/sales-conversion-eight-segment/
 └── references/
     ├── framework.md
     ├── learner-conversion-analysis.md
+    ├── intake-questioning.md
     ├── offer-and-proof.md
     ├── price-decision.md
     ├── diagnosis-rubric.md
