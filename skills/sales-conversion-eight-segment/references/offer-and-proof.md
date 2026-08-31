@@ -41,6 +41,21 @@ For near-3000-yuan and few-thousand-yuan offers, especially from 0元表单、�
 
 If the service stack is vague, do not treat a high-ticket offer as fully supported even when many bonuses are listed.
 
+## Low-Ticket Offer Clarity
+
+For tens-yuan offers, judge whether the learner can understand and act within seconds.
+
+```text
+低价产品：资料包 / 体验课 / 福利课 / 入门营 / 付费占位
+价格：原价 / 现价 / 是否全返 / 是否抵扣
+到手权益：课程、书籍、工具、回放、社群、答疑、包邮
+领取路径：支付后谁联系、地址给谁、什么时候发、如何进课
+返还规则：条件、方式、时间、失败情况
+低价理由：周年、福利、体验、平台补贴、老师公益、限时活动
+```
+
+Low-ticket offers do not need a large service stack, but they need clean rules. If the learner cannot explain "pay what, get what, when, from whom, and how to refund/claim", `优惠政策` is not complete.
+
 ## Evidence Stack
 
 Strong conversion normally needs a four-layer evidence stack:

@@ -173,6 +173,38 @@ Use when the user provides one or more training camp, welfare lesson, or multi-d
 六、还需要补充的样本或资料
 ```
 
+## Free-Lead Low-Ticket Diagnosis
+
+Use when 0元表单、免费营、结缘营、福利课 or 直播体验 users are converted to tens-yuan offers, low-price trial courses, full-return courses, or gift-led purchase actions.
+
+```text
+一、样本边界
+- 入口来源：
+- 刚刚交付的免费价值：
+- 销售产品与价格：
+- 低价动作：购买 / 占位 / 全返 / 领赠品 / 进课
+- 暂缺信息：
+
+二、低客单免费入口判断
+| 判断项 | 当前证据 | 判定 | 改进动作 |
+|---|---|---|---|
+| 免费体验获得感 |  | 足/弱/缺 |  |
+| 低价产品价值 |  | 清楚/模糊/缺 |  |
+| 价格/返还规则 |  | 清楚/模糊/缺/有风险 |  |
+| 赠品/权益规则 |  | 清楚/模糊/缺 |  |
+| 名额/截止边界 |  | 可信/偏弱/有风险 |  |
+| 助教操作路径 |  | 可执行/偏弱/缺 |  |
+| 短顾虑处理 |  | 足/弱/缺 |  |
+| 短案例/从众信号 |  | 足/弱/缺/有风险 |  |
+
+三、销讲波次图
+四、八段结构识别
+五、最影响几十元成交的 3 个断点
+六、优先改稿动作
+七、需要补充的规则/赠品/返还资料
+八、合规与信任边界提醒
+```
+
 ## Free-Lead High-Ticket Diagnosis
 
 Use when 0元表单、免费营、结缘营、福利课 or other low-commitment users are converted to near-3000-yuan or few-thousand-yuan offers.
