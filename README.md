@@ -17,6 +17,8 @@
 
 也强化了转阶型销讲判断，例如一阶转二阶、筑基营转进阶营、基础课转进阶课、老学员续报升单。重点检查：上一阶段已经交付了什么、下一阶段补什么缺口、问题是否递进收口、是否先提出用户认可的方案标准、产品是否证明自己符合这个标准、主次人群是否有取舍、模块价值是否真正下沉。
 
+最新版本进一步强化“原理、原则、方法”层面的提炼：当你提供复盘讨论、改稿反馈或真实案例时，它会优先抽象出销讲结构规律，例如共识优先、递进收口、先标准后产品、价值下沉、主张链路、主次人群、场景承接成本、价格策略和证据边界。具体行业案例只作为辅助样例，不作为核心规则。
+
 核心结构：
 
 ```text
@@ -70,6 +72,10 @@ cp -R skills/sales-conversion-eight-segment ~/.codex/skills/
 
 ```text
 使用 $sales-conversion-eight-segment，诊断这份一阶转二阶进阶营销讲设计。请先判断上一阶段已交付能力、下一阶段缺口、共识递进、主次人群、模块价值、价格锚定和案例证据是否足够支撑转阶报名。
+```
+
+```text
+使用 $sales-conversion-eight-segment，阅读这份销讲复盘讨论，帮我提炼能沉淀进 skill 的结构原理、判断原则和改稿方法。请不要重点复述具体行业案例，而是说明这些反馈能升级哪一段、哪条原则、哪些检查项。
 ```
 
 ## 最小前提
@@ -153,6 +159,7 @@ skills/sales-conversion-eight-segment/
 ├── agents/openai.yaml
 └── references/
     ├── framework.md
+    ├── conversion-structure-principles.md
     ├── learner-conversion-analysis.md
     ├── intake-questioning.md
     ├── offer-and-proof.md

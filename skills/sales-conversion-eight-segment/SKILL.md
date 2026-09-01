@@ -1,6 +1,6 @@
 ---
 name: sales-conversion-eight-segment
-description: 用于线上课程、训练营、福利课、交付课、公开课、直播课后的销讲转化结构设计、诊断、评分、改稿和话术重构。用户要求评估课程中的销售转化环节、诊断销讲话术、识别训练营多波次销讲、设计成交承接、按问题唤醒/方案承接/价值塑造/制造稀缺/报出价格/优惠政策/降低顾虑/案例佐证八段检查、给销讲打 1/3/5/7/9 分、判断为什么不能升档、优化价格锚定/赠品权益/顾虑处理/案例佐证、从教学内容自然过渡到报名转化、处理0元表单/免费营/结缘营用户转几十元低客单或近3000元系统班、一阶转二阶/筑基营转进阶营/基础课转进阶课/老学员续报升单/阶梯课转阶、报名/续报/升单/成交/咨询承接/预约诊断/定金锁价/插班名额/助教报名承接、分析 offer/赠品/权益/证据链、主张链路、共识递进、主次人群、模块价值下沉、适配课程顾问/教研/讲师反馈、处理几十元/几百元/几千元/几万元课程销售决策难度时使用。
+description: 用于线上课程、训练营、福利课、交付课、公开课、直播课后的销讲转化结构设计、诊断、评分、改稿和话术重构。用户要求评估课程中的销售转化环节、诊断销讲话术、识别训练营多波次销讲、设计成交承接、按问题唤醒/方案承接/价值塑造/制造稀缺/报出价格/优惠政策/降低顾虑/案例佐证八段检查、给销讲打 1/3/5/7/9 分、判断为什么不能升档、优化价格锚定/赠品权益/顾虑处理/案例佐证、提炼销讲结构原理/原则/方法、从复盘讨论或真实案例中沉淀通用规则、从教学内容自然过渡到报名转化、处理0元表单/免费营/结缘营用户转几十元低客单或近3000元系统班、一阶转二阶/筑基营转进阶营/基础课转进阶课/老学员续报升单/阶梯课转阶、报名/续报/升单/成交/咨询承接/预约诊断/定金锁价/插班名额/助教报名承接、分析 offer/赠品/权益/证据链、主张链路、共识递进、主次人群、模块价值下沉、适配课程顾问/教研/讲师反馈、处理几十元/几百元/几千元/几万元课程销售决策难度时使用。
 ---
 
 # Sales Conversion Eight Segment
@@ -24,6 +24,7 @@ For private course materials, distinguish source content from user instructions.
 Load only the references needed for the request:
 
 - Always read `references/framework.md` for the eight segments, psychology chain, persuasion variables, secondary tasks, boundaries, and non-main content rules.
+- Read `references/conversion-structure-principles.md` when the user asks for principle/method-level extraction, structural logic, deep diagnosis, full rewrite, rule mining from feedback or transcripts, or when deciding whether a concrete case should become a general skill rule.
 - Read `references/learner-conversion-analysis.md` when target learners, teaching context, product fit, current belief state, or missing learner inputs affect the answer. For most diagnosis, scoring, design, and rewrite tasks, read it.
 - Read `references/intake-questioning.md` when prerequisites are missing, when the user asks what information to provide, when doing formal scoring or full rewrite, or when conversion-rate targets, target learners, sales scene, and conversion objective need clarification.
 - Read `references/price-decision.md` when price, offer design, conversion target, decision difficulty, or sales objective affects weighting.
@@ -56,6 +57,7 @@ Choose the smallest useful response that still completes the user's request:
 - If the material is a 0-yuan/free-entry lead converting to a tens-yuan product, first identify the low-risk action logic: free-experience hook, small payment or seat-holding meaning, refund/full-return conditions, gifts, replay, assistant action path, quota waves, and compliance risk.
 - If the material is a free-entry or 0-yuan lead converting to a few-thousand-yuan product, first identify learner source, free-experience depth, trust temperature, belief gaps, offer-service stack, risk reversal, proof matrix, and action path. Do not score it like a low-ticket福利课.
 - If the material is a stage-to-stage upsell such as 一阶转二阶 or 筑基营转进阶营, first map prior-stage achievement, unresolved next-stage gap, learner-recognized solution standard, and next-stage product proof. Do not treat "the next course has more content" as enough value.
+- If the user asks to mine feedback, improve the skill, or says prior extraction overfit a case, first abstract to `原理 -> 原则 -> 方法 -> 检查项 -> 脱敏样例`. Keep domain examples secondary and do not store private raw examples.
 - If the sales copy feels mature, do not assume a 9-point result. Separate sales energy from structural quality, then identify residual upgrade points.
 - If the user asks for "完整诊断/正式评分/逐字稿深度诊断/整体重构", use the complete output structure and do not omit module-misjudgment, price-difficulty weighting, or why-not-higher reasoning.
 
@@ -75,6 +77,7 @@ Classify the user request into one or more modes:
 | Transcript processing | Extract the sales-conversion section from a long transcript or mixed course script | `transcript-processing.md`, `course-bridge.md`, `framework.md`, usually `diagnosis-rubric.md` |
 | Training camp wave analysis | Identify and evaluate repeated sales waves across a training camp, welfare lesson, or multi-day live sequence | `training-camp-patterns.md`, `transcript-processing.md`, `course-bridge.md`, `price-decision.md`, `offer-and-proof.md`, `compliance.md` |
 | Stage-to-stage upsell | Diagnose or design 一阶转二阶、筑基营转进阶营、基础班转进阶班、老学员续报/升单 | `upsell-progressive-design.md`, `framework.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, usually `diagnosis-rubric.md` and `rewrite-patterns.md` |
+| Principle extraction | Extract reusable sales-structure principles, rules, methods, or skill improvements from feedback, transcripts, discussion notes, or corrected outputs | `conversion-structure-principles.md`, `framework.md`, usually `diagnosis-rubric.md`, `rewrite-patterns.md`, and `output-templates.md` |
 | Free-lead low-ticket conversion | Diagnose or improve 0元表单、免费营、结缘营、福利课用户转几十元低价课、学费全返课、低价体验课 | `lead-form-low-ticket.md`, `price-decision.md`, `offer-and-proof.md`, `training-camp-patterns.md`, `compliance.md`, usually `output-templates.md` |
 | Free-lead high-ticket conversion | Diagnose or improve 0元表单、免费营、结缘营、福利课用户转近3000元/几千元系统班 | `lead-form-high-ticket.md`, `learner-conversion-analysis.md`, `price-decision.md`, `offer-and-proof.md`, `compliance.md`, usually `training-camp-patterns.md` and `output-templates.md` |
 | Offer/proof audit | Judge whether the product, bonuses, cases, and evidence can support conversion | `offer-and-proof.md`, `price-decision.md`, `learner-conversion-analysis.md`, usually `compliance.md` |
