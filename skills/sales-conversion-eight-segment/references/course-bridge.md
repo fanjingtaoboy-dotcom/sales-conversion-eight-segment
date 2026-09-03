@@ -11,6 +11,39 @@
 
 当用户提供的是一整节课，先判断教学主链是否完整，再单独切出销讲段判断转化链。两者可以衔接，但不应混成一个结构。
 
+## Dispatch Rule
+
+When a user gives a whole course or asks whether to use one skill or both, classify the task before diagnosis:
+
+| User asks about | Primary skill | Output priority |
+|---|---|---|
+| 听懂、学会、记住、实操、作业、次日到课、教学主线 | `$course-seven-segment-designer` | course delivery chain |
+| 报名、成交、价格、优惠、赠品、权益、顾虑、案例佐证、定金、咨询 | `$sales-conversion-eight-segment` | buyer decision chain |
+| 整课逐字稿里既有教学又有销讲 | both skills | boundary map, teaching S0, then sales eight-segment diagnosis |
+| 转化不好但不确定原因 | boundary-first check | identify whether bottleneck is teaching gain, handoff, offer, proof, or action path |
+
+If the user only asks for sales conversion, do not deeply score the full course. Identify whether the teaching section creates enough S0 gain, then focus on the extracted sales section.
+
+## Boundary Signals
+
+Teaching-main-chain signals:
+
+- topic orientation, learner scene, pain cause, principle, method, practice, feedback, summary, homework, next lesson
+- cases used to help learners understand or practice
+- assistant reminders supporting learning, submission, or correction
+
+Sales-main-chain signals:
+
+- product/course introduction, price, discount, quota, deadline, bonus, refund, guarantee, deposit, enrollment link, consultation, payment
+- cases used to prove product value, service reliability, learning outcome, or buyer confidence
+- assistant reminders supporting ordering, registration, payment, or consultation
+
+Ambiguous content must be judged by function:
+
+```text
+Does this paragraph help learners use today's method, or help buyers decide the next paid/consultative action?
+```
+
 ## When Embedded in a Course
 
 Use this sequence:

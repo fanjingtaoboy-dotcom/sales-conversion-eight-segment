@@ -106,7 +106,7 @@ skill 输出是否有用：
 
 ```text
 quick_validate.py 通过
-没有 TODO
+没有待办占位符
 没有密码、邮箱、手机号、真实学员隐私
 没有未脱敏逐字稿
 README 安装说明可用

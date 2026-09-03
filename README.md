@@ -29,7 +29,16 @@
 
 ## 安装
 
-下载本仓库后，把 `skills/sales-conversion-eight-segment` 放到你的 Codex skills 目录：
+推荐直接在 Codex 里粘贴：
+
+```text
+请使用 $skill-installer 安装：
+https://github.com/fanjingtaoboy-dotcom/sales-conversion-eight-segment/tree/main/skills/sales-conversion-eight-segment
+```
+
+安装后通常下一轮对话即可使用；如果没有出现，重启或刷新 Codex。
+
+也可以下载本仓库后，把 `skills/sales-conversion-eight-segment` 放到你的 Codex skills 目录：
 
 ```bash
 mkdir -p ~/.codex/skills
@@ -37,6 +46,24 @@ cp -R skills/sales-conversion-eight-segment ~/.codex/skills/
 ```
 
 重启或刷新 Codex 后，使用 `$sales-conversion-eight-segment` 调用。
+
+## 和课程七段 Skill 一起用
+
+如果你提供的是一整节课，里面既有教学又有销讲，建议这样使用：
+
+```text
+第一步：用 $course-seven-segment-designer 识别教学主链是否形成 S0 获得感
+第二步：用 $sales-conversion-eight-segment 切出销讲主链并诊断八段结构
+第三步：单独检查教学到销讲的衔接是否自然
+```
+
+分工标准：
+
+| 问题 | 使用 |
+|---|---|
+| 学员是否听懂、学会、记住、愿意练习？ | `$course-seven-segment-designer` |
+| 学员是否相信、觉得值、敢买、现在行动？ | `$sales-conversion-eight-segment` |
+| 转化不好但不确定原因 | 先做教学/销讲边界识别，再判断瓶颈 |
 
 ## 怎么用
 
@@ -188,6 +215,8 @@ skills/sales-conversion-eight-segment/
 - `docs/iteration-playbook.md`：如何把真实使用反馈沉淀成下一轮规则。
 
 提交反馈时请先脱敏，不要上传真实姓名、电话、微信、订单、未授权学员案例或完整私密逐字稿。
+
+优先沉淀能迁移的方法层内容：结构原理、判断原则、改稿方法、检查项、脱敏样例。具体行业案例只作为辅助说明，不作为核心规则。
 
 ## 许可与署名
 
